@@ -1,3 +1,7 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import day1.countIncreases
+import day1.countWindowIncreases
+
+fun main() {
+    println(countIncreases())
+    println(countWindowIncreases())
 }
