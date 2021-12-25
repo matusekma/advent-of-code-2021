@@ -7,7 +7,7 @@ fun countWindowIncreases(): Int {
     val window = LinkedList(listOf(Int.MAX_VALUE / 3, Int.MAX_VALUE / 3, Int.MAX_VALUE / 3))
     var count = 0
     var lineProcessed = 1
-    val path = {}.javaClass.classLoader.getResource("input.txt")?.file!!
+    val path = {}.javaClass.classLoader.getResource("input1.txt")?.file!!
     File(path).forEachLine { line ->
         val currentDepth = line.toInt()
         window.add(currentDepth)

@@ -7,12 +7,11 @@ import kotlin.test.assertEquals
 class Day1Test {
 
     @ParameterizedTest
-    @CsvSource("199,200,True", "200,199,False")
-    fun testDidIncreasedTrue(depth1: Int, depth2: Int, expectedIncreased: Boolean) {
+    @CsvSource("199,200,True", "200,199,False", "200,200,False")
+    fun testDidIncrease(depth1: Int, depth2: Int, expectedIncreased: Boolean) {
+        val increased = didIncrease(depth1, depth2)
 
-        val increased = didIncrease(depth1, depth2);
-
-        assertEquals(expectedIncreased, increased);
+        assertEquals(expectedIncreased, increased)
     }
 
 
